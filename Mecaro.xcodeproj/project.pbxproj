@@ -6,8 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B23322FB2F6D811F0011E832 /* REFACTORING_SUMMARY.md in Resources */ = {isa = PBXBuildFile; fileRef = B23322FA2F6D811F0011E832 /* REFACTORING_SUMMARY.md */; };
+		B23322FD2F6D815E0011E832 /* QUICK_START_CHECKLIST.md in Resources */ = {isa = PBXBuildFile; fileRef = B23322FC2F6D815E0011E832 /* QUICK_START_CHECKLIST.md */; };
+		B23323062F6D8A000011E832 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B23323052F6D8A000011E832 /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B21AA55F2F07DFB700858536 /* Mecaro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mecaro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23322FA2F6D811F0011E832 /* REFACTORING_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = REFACTORING_SUMMARY.md; sourceTree = "<group>"; };
+		B23322FC2F6D815E0011E832 /* QUICK_START_CHECKLIST.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = QUICK_START_CHECKLIST.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23323062F6D8A000011E832 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +43,9 @@
 			children = (
 				B21AA5612F07DFB700858536 /* Mecaro */,
 				B21AA5602F07DFB700858536 /* Products */,
+				B23322FA2F6D811F0011E832 /* REFACTORING_SUMMARY.md */,
+				B23322FC2F6D815E0011E832 /* QUICK_START_CHECKLIST.md */,
+				B23323042F6D8A000011E832 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,6 +55,13 @@
 				B21AA55F2F07DFB700858536 /* Mecaro.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B23323042F6D8A000011E832 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +84,7 @@
 			);
 			name = Mecaro;
 			packageProductDependencies = (
+				B23323052F6D8A000011E832 /* Supabase */,
 			);
 			productName = Mecaro;
 			productReference = B21AA55F2F07DFB700858536 /* Mecaro.app */;
@@ -94,6 +114,9 @@
 			);
 			mainGroup = B21AA5562F07DFB700858536;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B21AA5AF2F07E08F00858536 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B21AA5602F07DFB700858536 /* Products */;
 			projectDirPath = "";
@@ -109,6 +132,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23322FD2F6D815E0011E832 /* QUICK_START_CHECKLIST.md in Resources */,
+				B23322FB2F6D811F0011E832 /* REFACTORING_SUMMARY.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B21AA5AF2F07E08F00858536 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B23323052F6D8A000011E832 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B21AA5AF2F07E08F00858536 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B21AA5572F07DFB700858536 /* Project object */;
 }
